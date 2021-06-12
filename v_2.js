@@ -1,4 +1,6 @@
 {
+    // 当电梯内楼层按钮被按下时，前往该楼层。电梯无任务时，回到楼层0。
+    
     init: function(elevators, floors) {
         var elevator = new Array();  // 创建电梯序列
         for(var i=0;i<elevators.length;i++){
