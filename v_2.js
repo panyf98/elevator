@@ -11,17 +11,19 @@
         }
 
         elevator[0].on("floor_button_pressed", function(floorNum) {
-            // Maybe tell the elevator to go to that floor?
+            // 当电梯0中的楼层按钮被按下，则前往该楼层
             elevator[0].goToFloor(floorNum);
         });
         elevator[1].on("floor_button_pressed", function(floorNum) {
-            // Maybe tell the elevator to go to that floor?
+            // 当电梯1中的楼层按钮被按下，则前往该楼层
             elevator[1].goToFloor(floorNum);
         });
         elevator[0].on("idle",function(){
+            // 当电梯0无任务时，回到楼层0
             elevator[0].goToFloor(0);
         });
         elevator[1].on("idle",function(){
+            // 当电梯1无任务时，回到楼层0
             elevator[1].goToFloor(0);
         });
     },
