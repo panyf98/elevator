@@ -1,4 +1,6 @@
 {
+    // 一台电梯循环遍历所有楼层
+    
     init: function(elevators, floors) {
         var elevator = elevators[0]; // 初始化一台电梯
 
