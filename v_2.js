@@ -7,10 +7,6 @@
             elevator[i] = elevators[i];  // 创建电梯序号(0~n-1)
             elevator[i].goToFloor(0);  // 程序开始时电梯位于0层
         }
-        var floor = new Array();  // 创建楼层序列
-        for(i=0;i<floors.length;i++){
-            floor[i] = floors[i];  // 创建楼层序号(0~n-1)
-        }
 
         elevator[0].on("floor_button_pressed", function(floorNum) {
             // 当电梯0中的楼层按钮被按下，则前往该楼层
