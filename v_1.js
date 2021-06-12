@@ -1,10 +1,10 @@
 {
     init: function(elevators, floors) {
-        var elevator = elevators[0]; // Let's use the first elevator
+        var elevator = elevators[0]; // 初始化一台电梯
 
-        // Whenever the elevator is idle (has no more queued destinations) ...
+        // 当电梯无任务时
         elevator.on("idle", function() {
-            // let's go to all the floors (or did we forget one?)
+            // 遍历每一个楼层
             elevator.goToFloor(0);
             elevator.goToFloor(1);
             elevator.goToFloor(2);
